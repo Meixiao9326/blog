@@ -18,4 +18,10 @@ class PostController extends Controller
 {
     return view('Posts.show')->with(['post' => $post]);
     }
-}
+
+
+    public function create()
+    {
+        return view('Posts.create');
+    }
+    }
